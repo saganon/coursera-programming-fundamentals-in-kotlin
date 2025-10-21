@@ -3,14 +3,79 @@ package org.playground
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
-    val name = "Kotlin"
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    println("Hello, " + name + "!")
+    for (i in 1..5) {
+        for (j in 1..i) {
+            print("*")
+        }
+        println()
+    }
+
+    val height = 10
+    for (i in 1..height) {
+        for (j in 1..i) {
+            print("y")
+        }
+        println()
+    }
 
     for (i in 1..5) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        println("i = $i")
+        val numberOfStars = 6 - i
+        for (j in 1..numberOfStars) {
+            print("*")
+        }
+        println()
+    }
+
+    for (numberOfStars in 5 downTo 1) {
+        for (i in 1..numberOfStars) {
+            print("*")
+        }
+        println()
+    }
+
+    val height1 = 10
+    for (numberOfStars in height1 downTo 1) {
+        for (j in 1..numberOfStars) {
+            print("*")
+        }
+        println()
+    }
+
+    val width = 5
+    for (i in 1 until width step 2) {
+        for (j in 1..i) {
+            print("*")
+        }
+        println()
+    }
+    for (i in width downTo 1 step 2) {
+        for (j in 1..i) {
+            print("*")
+        }
+        println()
+    }
+
+    for (i in 1..5) {
+        val numberOfSpaces = 5 - i
+        for (j in 1..numberOfSpaces) {
+            print(" ")
+        }
+        val numberOfStars = i
+        for (j in 1..numberOfStars) {
+            print("*")
+        }
+        println()
+    }
+
+    for (i in 1..5) {
+        val numberOfSpaces = 5 - i
+        for (j in 1..numberOfSpaces) {
+            print(" ")
+        }
+        val numberOfStars = i * 2 - 1
+        for (j in 1..numberOfStars) {
+            print("*")
+        }
+        println()
     }
 }
