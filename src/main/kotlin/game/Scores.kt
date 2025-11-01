@@ -11,11 +11,13 @@ class Scores {
         return best
     }
 
-    fun totalScore(current: Int, newScore: Int): Int {
-        return newScore + current
-    }
+    fun totalScore(
+        current: Int,
+        newScore: Int,
+    ): Int = newScore + current
 
-    fun highestScore(player1: Player, player2: Player): Player {
-        return if (player1.totalScore >= player2.totalScore) player1 else player2
-    }
+    fun highestScore(
+        player1: Player,
+        player2: Player,
+    ): Player = if (player1.totalScore >= player2.totalScore) player1 else player2
 }
