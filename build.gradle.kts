@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "2.1.21"
+    id("org.jlleitschuh.gradle.ktlint") version "13.1.0"
 }
 
 group = "org.playground"

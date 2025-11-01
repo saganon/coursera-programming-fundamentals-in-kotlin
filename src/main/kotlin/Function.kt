@@ -1,11 +1,12 @@
 package org.playground
 
-fun getPoints(basePoint: Int, boost: Int): Int {
-    return basePoint * boost;
-}
+fun getPoints(
+    basePoint: Int,
+    boost: Int,
+): Int = basePoint * boost
 
 fun score() {
-    var score = 0;
+    var score = 0
     println(score)
     score += getPoints(10, 1)
     println(score)
