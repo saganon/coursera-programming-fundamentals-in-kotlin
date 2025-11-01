@@ -5,4 +5,6 @@ package org.playground
 fun main() {
     forLoopCourse()
     score()
+    println(factorial(2)) // 2
+    println(factorial(3)) // 6
 }
