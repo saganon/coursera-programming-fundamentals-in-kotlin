@@ -21,4 +21,6 @@ fun main() {
     println("Please, Enter the student's name\n")
     val name = readln()
     println(searchInStudents(name) ?: "The student is not found")
+
+    displayComments()
 }
